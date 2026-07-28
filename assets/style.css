@@ -1,0 +1,233 @@
+:root{
+  --verde:#4b6b3d;
+  --verde-oscuro:#33472a;
+  --naranja:#c0472a;
+  --azul:#1b4f72;
+  --crema:#f6f1e7;
+  --gris:#5b5b52;
+  --borde:#e2d9c6;
+  --blanco:#ffffff;
+}
+
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  background:var(--crema);
+  color:#2b2b26;
+  line-height:1.5;
+}
+
+header.top{
+  background:var(--verde-oscuro);
+  color:var(--blanco);
+  padding:22px 18px 26px;
+  text-align:center;
+}
+header.top h1{
+  margin:0 0 4px;
+  font-size:1.5rem;
+  letter-spacing:.5px;
+}
+header.top p{
+  margin:0;
+  opacity:.85;
+  font-size:.95rem;
+}
+
+nav.breadcrumb{
+  max-width:760px;
+  margin:14px auto 0;
+  padding:0 18px;
+  font-size:.9rem;
+}
+nav.breadcrumb a{
+  color:var(--verde-oscuro);
+  text-decoration:none;
+  font-weight:600;
+}
+
+main{
+  max-width:760px;
+  margin:0 auto;
+  padding:18px;
+}
+
+.tagline{
+  background:var(--blanco);
+  border:1px solid var(--borde);
+  border-radius:12px;
+  padding:16px 18px;
+  margin-bottom:22px;
+  font-size:.98rem;
+}
+
+h2.section{
+  font-size:1.05rem;
+  color:var(--verde-oscuro);
+  margin:28px 0 12px;
+  border-bottom:2px solid var(--borde);
+  padding-bottom:6px;
+}
+
+.proyectos{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.card{
+  display:block;
+  background:var(--blanco);
+  border:1px solid var(--borde);
+  border-radius:14px;
+  padding:18px;
+  text-decoration:none;
+  color:inherit;
+  transition:box-shadow .15s ease, transform .15s ease;
+}
+.card:hover{
+  box-shadow:0 4px 14px rgba(0,0,0,.08);
+  transform:translateY(-1px);
+}
+.card .badge{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.4px;
+  padding:3px 9px;
+  border-radius:999px;
+  margin-bottom:8px;
+}
+.badge.urgente{background:#fbe4dd;color:var(--naranja);}
+.badge.activo{background:#dbe9f5;color:var(--azul);}
+.card h3{
+  margin:0 0 6px;
+  font-size:1.15rem;
+}
+.card p{
+  margin:0;
+  color:var(--gris);
+  font-size:.92rem;
+}
+.card .flecha{
+  display:block;
+  text-align:right;
+  margin-top:10px;
+  font-weight:600;
+  color:var(--verde-oscuro);
+}
+
+.necesidades-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(130px,1fr));
+  gap:12px;
+  margin:14px 0 6px;
+}
+.necesidad{
+  background:var(--blanco);
+  border:1px solid var(--borde);
+  border-radius:10px;
+  padding:12px 8px;
+  text-align:center;
+  font-size:.85rem;
+}
+.necesidad .emoji{
+  font-size:1.6rem;
+  display:block;
+  margin-bottom:6px;
+}
+
+.puntos{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin:14px 0;
+}
+.punto{
+  background:var(--blanco);
+  border:1px solid var(--borde);
+  border-left:5px solid var(--verde);
+  border-radius:10px;
+  padding:14px 16px;
+}
+.punto h4{
+  margin:0 0 4px;
+  font-size:1rem;
+}
+.punto p{margin:2px 0;font-size:.9rem;color:var(--gris);}
+.punto .aviso{
+  color:var(--naranja);
+  font-weight:600;
+}
+
+.pendiente{
+  background:#fff8ee;
+  border:1px dashed #d9b877;
+  border-radius:10px;
+  padding:14px 16px;
+  font-size:.92rem;
+  color:#7a5b1f;
+}
+
+.whatsapp-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#25D366;
+  color:#fff;
+  font-weight:700;
+  text-decoration:none;
+  padding:13px 20px;
+  border-radius:999px;
+  font-size:.95rem;
+  margin-top:6px;
+}
+
+.contacto-tel{
+  display:block;
+  margin-top:10px;
+  font-size:.95rem;
+}
+.contacto-tel a{color:var(--verde-oscuro);font-weight:700;text-decoration:none;}
+
+.cierre{
+  text-align:center;
+  font-style:italic;
+  color:var(--gris);
+  margin:26px 0 4px;
+  font-size:.95rem;
+}
+
+footer{
+  max-width:760px;
+  margin:30px auto 0;
+  padding:22px 18px 30px;
+  border-top:1px solid var(--borde);
+  text-align:center;
+}
+footer p.gracias{
+  font-size:.9rem;
+  color:var(--gris);
+  margin-bottom:14px;
+}
+.logos{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+}
+.logos img{
+  height:64px;
+  width:64px;
+  object-fit:contain;
+  border-radius:50%;
+}
+.actualizado{
+  font-size:.78rem;
+  color:#999;
+  margin-top:18px;
+}
