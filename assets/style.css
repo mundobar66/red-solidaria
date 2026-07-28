@@ -277,6 +277,23 @@ footer p.gracias{
   object-fit:contain;
   border-radius:50%;
 }
+
+.logos-top{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:14px;
+  padding:12px 18px;
+  background:var(--blanco);
+  border-bottom:1px solid var(--borde);
+}
+.logos-top img{
+  height:38px;
+  width:38px;
+  object-fit:contain;
+  border-radius:50%;
+}
 .actualizado{
   font-size:.78rem;
   color:#999;
