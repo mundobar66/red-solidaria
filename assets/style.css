@@ -120,6 +120,18 @@ h2.section{
   color:var(--verde-oscuro);
 }
 
+.card .info-btn{
+  display:inline-block;
+  margin-top:10px;
+  float:right;
+  background:var(--verde-oscuro);
+  color:#fff;
+  font-weight:700;
+  font-size:.82rem;
+  padding:7px 16px;
+  border-radius:999px;
+}
+
 .necesidades-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(130px,1fr));
